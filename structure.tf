@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami                    = "ami-078a289ddf4b09ae0"
+  ami                    = "ami-0fb391cce7a602d1f"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.clo.id]
   user_data              = file("init.sh")
@@ -14,7 +14,7 @@ resource "aws_instance" "app_server" {
 
 
 
-resource "aws_security_group" "clo" {
+resource "aws_security_group" "clod" {
    name = "WS SG"
    description = "workid"
 

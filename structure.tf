@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "AKIAQUVTYO3QK7GZA7H7"
-  secret_key = "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"
+  access_key = "AKIAQUVTYO3QOAYRTMGB"
+  secret_key = "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"
   region     = "eu-west-2"
 
 }
@@ -47,22 +47,10 @@ resource "aws_security_group" "clo" {
 
   }
 
-
-
-
-
   egress {
-
     from_port   = 0
-
     protocol    = "-1"
-
     to_port     = 0
-
     cidr_blocks = ["0.0.0.0/0"]
-
   }
-
-
-
 }

@@ -8,7 +8,7 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami                    = "ami-0fb391cce7a602d1f"
   instance_type          = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.clo.id]
+  vpc_security_group_ids = [aws_security_group.clod.id]
   user_data              = file("init.sh")
 }
 

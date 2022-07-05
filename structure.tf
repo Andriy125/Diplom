@@ -39,6 +39,13 @@ resource "aws_security_group" "clod" {
     cidr_blocks = ["0.0.0.0/0"]
 
   }
+  ingress {
+    from_port   = 3306
+    protocol    = "tcp"
+    to_port     = 3306
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
     ingress {
     from_port   = 443
     protocol    = "tcp"
